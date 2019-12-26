@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/styles/mystyle.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.9.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <style>
+        .btn a{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>
+            @ViewBag.xinchao,
+        </h3>
+        <br />
+        <b>
+            Tôi rất vui lòng nếu bạn điền thông tin
+            để xác nhận tham dự bữa tiệc liên hoan cuối năm của K20A
+        </b>
+    </div>
+
+    <div class="btn btn-success">
+        @Html.ActionLink("Xác nhận", "XuLy")
+    </div>
+
+
+
+</body>
+</html>

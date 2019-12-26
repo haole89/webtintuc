@@ -1,0 +1,27 @@
+﻿@model HelloWordK20A.Models.GuestResponse
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HoanThanh</title>
+</head>
+<body>
+    <div>
+        @if (Model.XacNhan == true)
+        {
+            <h2>Thanks, @Model.HoTen</h2><br />
+            <p>Hẹn gặp bạn tại bữa tiệc!</p>
+        }
+        else
+        {
+            <h2>Thanks, @Model.HoTen</h2><br />
+            <p>Hẹn gặp bạn dịp khác!</p>
+        }
+    </div>
+</body>
+</html>
